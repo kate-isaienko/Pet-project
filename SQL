@@ -1,0 +1,58 @@
+SELECT 
+CustomerID,
+Gender,
+Age,
+CASE
+  WHEN Age >= 18 AND Age < 31 THEN "young"
+  WHEN Age >=31 AND Age < 51 THEN "middle"
+  ELSE "senior"
+END age_category,
+Income,
+CASE
+  WHEN Income >= 20000 AND Income < 50000 THEN "low"
+  WHEN Income >= 50000 AND Income < 100000 THEN "moderate"
+  ELSE "high"
+END income_category,
+WebsiteVisits,
+PagesPerVisit,
+TimeOnSite,
+EmailOpens,
+EmailClicks,
+ROUND(CASE 
+          WHEN EmailOpens = 0 THEN 0 
+          ELSE (EmailClicks / EmailOpens) * 100 
+        END, 2) AS personal_activity_rate,
+PreviousPurchases,
+LoyaltyPoints,
+DENSE_RANK() OVER(ORDER BY LoyaltyPoints DESC) as loyalty_rating,
+Conversion
+FROM `pet-project-428819.marketing_data.data` 
+ORDER BY loyalty_rating
+
+
+
+SELECT
+CampaignChannel,
+ROUND(AVG(AdSpend), 2) as avg_ad_spend,
+ROUND(AVG(ClickThroughRate), 2) as avg_ctr,
+ROUND(AVG(ConversionRate), 2) as avg_cr
+FROM `pet-project-428819.marketing_data.data` 
+GROUP BY CampaignChannel
+
+
+
+SELECT
+CampaignType,
+ROUND(AVG(AdSpend), 2) as avg_ad_spend,
+ROUND(AVG(ClickThroughRate), 2) as avg_ctr,
+ROUND(AVG(ConversionRate), 2) as avg_cr
+FROM `pet-project-428819.marketing_data.data` 
+GROUP BY CampaignType
+
+
+
+SELECT
+SUM(Conversion) as total_conversions,
+COUNT(CustomerID) as total_customers,
+ROUND(SUM(Conversion)/(COUNT(CustomerID)), 2) as users_conversion_rate
+FROM `pet-project-428819.marketing_data.data` 
