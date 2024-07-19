@@ -1,7 +1,8 @@
-My work will focus on researching data on user interaction with advertising campaigns, their demographics, and behavior. Analyzing users' demographic characteristics and income helps to understand their needs better and, accordingly, their behavior. In turn, the research on behavior and interaction with advertising campaigns makes it possible to choose the best marketing strategies for the highest efficiency in working with users.  
-The work will include segmentation of users by gender, age, and income groups, analysis of the presence or absence of influence of the budget spent on an advertising campaign on its performance indicators, creation of a customer loyalty rating, and research of the behavior of the most loyal of them, as well as loyalty segmentation for use in further advertising campaigns.
+My project is focused on researching data on user interaction with advertising campaigns, their demographics, and behavior. Analyzing users' demographic characteristics and income helps to understand their needs better and, accordingly, their behavior. In turn, the research on behavior and interaction with advertising campaigns makes it possible to choose the best marketing strategies for the highest efficiency in working with users.  
 
-The work aims not only to investigate the above aspects but also to provide business recommendations on the best channels and types of advertising campaigns to achieve the highest possible marketing efficiency.
+The project includes segmentation of users by gender, age, and income groups, analysis of the presence or absence of influence of the budget spent on an advertising campaign on its performance indicators, creation of a customer loyalty rating, and research of the behavior of the most loyal of them, as well as loyalty segmentation for use in further advertising campaigns.
+
+The project aims not only to investigate the above aspects but also to provide business recommendations on the best channels and types of advertising campaigns to achieve the highest possible marketing efficiency.
 
 Technologies stack  
 
@@ -15,32 +16,32 @@ Dataset description
 
 Demographic Information
 
-CustomerID: Unique identifier for each customer.
-Age: Age of the customer.
-Gender: Gender of the customer (Male/Female).
-Income: Annual income of the customer in USD.
+CustomerID: Unique identifier for each customer.  
+Age: Age of the customer.  
+Gender: Gender of the customer (Male/Female).  
+Income: Annual income of the customer in USD.  
 
-Marketing-specific Variables
+Marketing-specific Variables  
 
-CampaignChannel: The channel through which the marketing campaign is delivered (Email, Social Media, SEO, PPC, Referral).
-CampaignType: Type of the marketing campaign (Awareness, Consideration, Conversion, Retention).
-AdSpend: Amount spent on the marketing campaign in USD.
-ClickThroughRate: Rate at which customers click on the marketing content.
-ConversionRate: Rate at which clicks convert to desired actions (e.g., purchases).
+CampaignChannel: The channel through which the marketing campaign is delivered (Email, Social Media, SEO, PPC, Referral).  
+CampaignType: Type of the marketing campaign (Awareness, Consideration, Conversion, Retention).  
+AdSpend: Amount spent on the marketing campaign in USD.  
+ClickThroughRate: Rate at which customers click on the marketing content.  
+ConversionRate: Rate at which clicks convert to desired actions (e.g., purchases).  
 
-Customer Engagement Variables
+Customer Engagement Variables  
 
-WebsiteVisits: Number of visits to the website.
-PagesPerVisit: Average number of pages visited per session.
-TimeOnSite: Average time spent on the website per visit (in minutes).
-EmailOpens: Number of times marketing emails were opened.
-EmailClicks: Number of times links in marketing emails were clicked.
+WebsiteVisits: Number of visits to the website.  
+PagesPerVisit: Average number of pages visited per session.  
+TimeOnSite: Average time spent on the website per visit (in minutes).  
+EmailOpens: Number of times marketing emails were opened.  
+EmailClicks: Number of times links in marketing emails were clicked.  
 
-Historical Data
+Historical Data  
 
-PreviousPurchases: Number of previous purchases made by the customer.
-LoyaltyPoints: Number of loyalty points accumulated by the customer.
+PreviousPurchases: Number of previous purchases made by the customer.  
+LoyaltyPoints: Number of loyalty points accumulated by the customer.  
 
-Target Variable
+Target Variable  
 
-Conversion: Binary variable indicating whether the customer converted (1) or not (0).
+Conversion: Binary variable indicating whether the customer converted (1) or not (0).  
