@@ -1,15 +1,15 @@
-My work will focus on researching data on user interaction with advertising campaigns, their demographics, and behavior. Analyzing the demographic characteristics of users and their income helps to understand their needs better and, accordingly, their behavior. In turn, the research on behavior and interaction with advertising campaigns makes it possible to choose the best marketing strategies for the highest efficiency in working with users.
+My work will focus on researching data on user interaction with advertising campaigns, their demographics, and behavior. Analyzing users' demographic characteristics and income helps to understand their needs better and, accordingly, their behavior. In turn, the research on behavior and interaction with advertising campaigns makes it possible to choose the best marketing strategies for the highest efficiency in working with users.  
 The work will include segmentation of users by gender, age, and income groups, analysis of the presence or absence of influence of the budget spent on an advertising campaign on its performance indicators, creation of a customer loyalty rating, and research of the behavior of the most loyal of them, as well as loyalty segmentation for use in further advertising campaigns.
 
 The work aims not only to investigate the above aspects but also to provide business recommendations on the best channels and types of advertising campaigns to achieve the highest possible marketing efficiency.
 
-Technologies stack
+Technologies stack  
 
-Power Query: cleaning data and determining the correct data types for each variable;
-Excel: descriptive statistics, box plots, correlation analysis;
-Google BigQuery (SQL): preparing data for building visualizations, creating age and income categories, creating a ranking list, and aggregating metrics by channels and types of campaigns;
-Power BI: data visualization;
-Jupyter Notebook (Python): segmentation of customers by loyalty for its further use in marketing strategy.
+Power Query: cleaning data and determining the correct data types for each variable;  
+Excel: descriptive statistics, box plots, correlation analysis;  
+Google BigQuery (SQL): preparing data for building visualizations, creating age and income categories, creating a ranking list, and aggregating metrics by channels and types of campaigns;  
+Power BI: data visualization;  
+Jupyter Notebook (Python): segmentation of customers by loyalty for its further use in marketing strategy.  
 
 Dataset description
 
